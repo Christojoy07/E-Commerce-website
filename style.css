@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    margin-top: 10px;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(Resouce/Advertise.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 95%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+    margin-right: 0px; /* Adjust this for spacing between the logo and the options */
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center; /* Center the options in the remaining space */
+    flex: 1; /* Allow the ul to take up the remaining space */
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px; /* Space between options */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #424242;
+}
+.icon-container {
+    display: flex;
+    align-items: center; /* Center icons vertically */
+    margin-left: auto; /* Push icons to the right */
+}
+
+.icon-button {
+    background: none; /* Remove default button background */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Show pointer on hover */
+    margin-left: 40px; /* Space between icon buttons */
+}
+
+.icon {
+    width: 30px; /* Default icon size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Scale for individual buttons */
+.search-button {
+    transform: scale(0.8); /* Increase size of the search button */
+}
+
+.cart-button {
+    transform: scale(1.2); /* Increase size of the cart button */
+}
+
+.profile-button {
+    transform: scale(1.3); /* Increase size of the profile button */
+}
