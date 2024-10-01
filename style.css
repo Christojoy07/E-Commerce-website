@@ -1,0 +1,1347 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    padding: 5px 0px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: #EDFCE7;
+    opacity: 0.9;
+    z-index: 1000;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    flex: 1; 
+}
+
+.navbar ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 20px; 
+}
+
+.navbar ul li a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: #424242;
+    font-size: 20px;
+    transition: all 0.3s ease 0s;
+}
+.home, .shop, .deal, .contact{
+    width: 32px;
+    height: 28px;
+    color: #424242;
+}
+.navbar ul li a:hover{
+    color: #2C8E48;
+    font-weight:bold;
+}
+.navbar ul li a:hover .home {
+    color: #2C8E48;
+}
+.icon-container {
+    display: flex;
+    align-items: center; 
+    margin-left: auto; 
+    color: #424242;
+    padding: 30px;
+}
+
+.icon-button {
+    background: none; 
+    border: none;
+    cursor: pointer; 
+    margin-left: 40px; 
+}
+
+.icon {
+    width: 30px; 
+    height: auto;
+}
+.search-button {
+    transform: scale(0.75); 
+}
+.cart-button {
+    transform: scale(1.1); 
+}
+
+.profile-button {
+    transform: scale(1.5); 
+}
+
+/*ADVERTISE*/
+
+.ads{
+    
+    width:100%;
+    height: 100%;
+   
+    /*transform: translate(-50%,-50%);*/
+    overflow: hidden;
+    
+    
+}
+
+.slide{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    animation: slide 10s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(-100%);
+    }
+    50%{
+        transform: translate(-100%);
+    }
+}
+
+
+/*NEW DEAL*/
+
+.newdeal{
+    padding: 60px;
+    font-size: 35px;
+    font-weight: 500;
+}
+.sec{
+    padding: 10px 5%;
+
+}
+.product{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   gap: 80px;
+}
+.product .card{
+    width: 230px;
+    height: 380px;
+    background: #FAF5F5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+   /* padding: 60px;*/
+    margin-top: -20px;
+    margin-left: -20px;
+    overflow: hidden;
+    
+}
+.product .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.product .card .title{
+    padding: 4px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.product .card .title .like{
+    background-color: none;
+    border: none;
+    font-size: 18px;
+    opacity: 0.6;
+    color: #504F4F;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+}
+.product .card .title .like:hover{
+    color: black;
+
+}
+.product .card .title .like.liked{
+    color: red;
+}
+.product .card .desc{
+    padding: 1px 15px;
+    opacity: 0.8;
+}
+.product .card .price
+{
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 650;
+    color: red;
+}
+.product .card .box{
+    display: flex;
+    gap: -50px;
+}
+.product .card .box .off{
+    margin-left: -10px;
+    font-size: 16px;
+    color: #2C8E48;
+    font-weight: 500;
+}
+.product .card .offprice{
+    
+    padding: 5px 15px;
+    color: #B2B2B2;
+    font-size:14px ;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+.product .card .addtocart {
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: 12PX;
+    color: black;
+    background-color: #FFC700;
+    padding: 8px 65px;
+    font-weight: 700;
+    border:1px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;;
+    
+
+}
+.product .card .addtocart:hover{
+    background-color: #F3BD00;
+}
+
+
+/*PRODUCT 2*/
+
+.product .card1{
+    width: 230px;
+    height: 380px;
+    background: #FAF5F5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+   /* padding: 60px;*/
+    margin-top: -20px;
+    margin-left: -20px;
+    overflow: hidden;
+    
+}
+.product .card1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.product .card1 .title{
+    padding: 4px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.product .card1 .title .like{
+    background-color: none;
+    border: none;
+    font-size: 18px;
+    opacity: 0.6;
+    color: #504F4F;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+}
+.product .card1 .title .like:hover{
+    color: black;
+
+}
+.product .card1 .title .like.liked{
+    color: red;
+}
+.product .card1 .desc{
+    padding: 1px 15px;
+    opacity: 0.8;
+}
+.product .card1 .price
+{
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 650;
+    color: red;
+}
+.product .card1 .box{
+    display: flex;
+    gap: -50px;
+}
+.product .card1 .box .off{
+    margin-left: -10px;
+    font-size: 16px;
+    color: #2C8E48;
+    font-weight: 500;
+}
+.product .card1 .offprice{
+    
+    padding: 5px 15px;
+    color: #B2B2B2;
+    font-size:14px ;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+.product .card1 .addtocart {
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: 12PX;
+    color: black;
+    background-color: #FFC700;
+    padding: 8px 65px;
+    font-weight: 700;
+    border:1px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;;
+    
+
+}
+.product .card1 .addtocart:hover{
+    background-color: #F3BD00;
+}
+
+
+/*PRODUCT*/
+
+.product .card2{
+    width: 230px;
+    height: 380px;
+    background: #FAF5F5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+   /* padding: 60px;*/
+    margin-top: -20px;
+    margin-left: -20px;
+    overflow: hidden;
+    
+}
+.product .card2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.product .card2 .title{
+    padding: 4px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 85px;
+}
+.product .card2 .title .like{
+    background-color: none;
+    border: none;
+    font-size: 18px;
+    opacity: 0.6;
+    color: #504F4F;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+}
+.product .card2 .title .like:hover{
+    color: black;
+
+}
+.product .card2 .title .like.liked{
+    color: red;
+}
+.product .card2 .desc{
+    padding: 1px 15px;
+    opacity: 0.8;
+}
+.product .card2 .price
+{
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 650;
+    color: red;
+}
+.product .card2 .box{
+    display: flex;
+    gap: -50px;
+}
+.product .card2 .box .off{
+    margin-left: -10px;
+    font-size: 16px;
+    color: #2C8E48;
+    font-weight: 500;
+}
+.product .card2 .offprice{
+    
+    padding: 5px 15px;
+    color: #B2B2B2;
+    font-size:14px ;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+.product .card2 .addtocart {
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: 12PX;
+    color: black;
+    background-color: #FFC700;
+    padding: 8px 65px;
+    font-weight: 700;
+    border:1px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;;
+    
+
+}
+.product .card2 .addtocart:hover{
+    background-color: #F3BD00;
+}
+
+/*PRODUCT4*/
+
+.product .card3{
+    width: 230px;
+    height: 380px;
+    background: #FAF5F5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+   /* padding: 60px;*/
+    margin-top: -20px;
+    margin-left: -20px;
+    overflow: hidden;
+    
+}
+.product .card3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.product .card3 .title{
+    padding: 4px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 85px;
+}
+.product .card3 .title .like{
+    background-color: none;
+    border: none;
+    font-size: 18px;
+    opacity: 0.6;
+    color: #504F4F;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+}
+.product .card3 .title .like:hover{
+    color: black;
+
+}
+.product .card3 .title .like.liked{
+    color: red;
+}
+.product .card3 .desc{
+    padding: 1px 15px;
+    opacity: 0.8;
+}
+.product .card3 .price
+{
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 650;
+    color: red;
+}
+.product .card3 .box{
+    display: flex;
+    gap: -50px;
+}
+.product .card3 .box .off{
+    margin-left: -10px;
+    font-size: 16px;
+    color: #2C8E48;
+    font-weight: 500;
+}
+.product .card3 .offprice{
+    
+    padding: 5px 15px;
+    color: #B2B2B2;
+    font-size:14px ;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+.product .card3 .addtocart {
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: 12PX;
+    color: black;
+    background-color: #FFC700;
+    padding: 8px 65px;
+    font-weight: 700;
+    border:1px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;;
+    
+
+}
+.product .card3 .addtocart:hover{
+    background-color: #F3BD00;
+}
+
+/*PRODUCT 5*/
+
+.product .card4{
+    width: 230px;
+    height: 380px;
+    background: #FAF5F5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+   /* padding: 60px;*/
+    margin-top: -20px;
+    margin-left: -20px;
+    overflow: hidden;
+    
+}
+.product .card4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.product .card4 .title{
+    padding: 4px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.product .card4 .title .like{
+    background-color: none;
+    border: none;
+    font-size: 18px;
+    opacity: 0.6;
+    color: #504F4F;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+}
+.product .card4 .title .like:hover{
+    color: black;
+
+}
+.product .card4 .title .like.liked{
+    color: red;
+}
+.product .card4 .desc{
+    padding: 1px 15px;
+    opacity: 0.8;
+}
+.product .card4 .price
+{
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 650;
+    color: red;
+}
+.product .card4 .box{
+    display: flex;
+    gap: -50px;
+}
+.product .card4 .box .off{
+    margin-left: -10px;
+    font-size: 16px;
+    color: #2C8E48;
+    font-weight: 500;
+}
+.product .card4 .offprice{
+    
+    padding: 5px 15px;
+    color: #B2B2B2;
+    font-size:14px ;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+.product .card4 .addtocart {
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: 12PX;
+    color: black;
+    background-color: #FFC700;
+    padding: 8px 65px;
+    font-weight: 700;
+    border:1px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;;
+    
+
+}
+.product .card4 .addtocart:hover{
+    background-color: #F3BD00;
+}
+
+.shopbycategory{
+    padding: 60px;
+    font-size: 35px;
+    font-weight: 500;
+}
+.cate{
+    padding: 10px 4%;
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+
+}
+.cate .cate1 .ca img{
+    background-color: none;
+    width: 150px;
+}
+.cate .cate1 .name{
+    color: black;
+    padding: 34px 22%;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.cate .cate2 .ca img{
+    width: 100px;
+    
+}
+.cate .cate2 .name{
+    color: black;
+    padding: 34px 22%;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.cate .cate3 .ca img{
+    width: 150px;
+    
+}
+.cate .cate3 .name{
+    color: black;
+    padding: 34px 22%;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.cate .cate4 .ca img{
+    width: 150px;
+   
+}
+.cate .cate4 .name{
+    color: black;
+    padding: 34px 22%;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.cate .cate5 .ca img{
+    width: 150px;
+    
+}
+.cate .cate5 .name{
+    color: black;
+    padding: 34px 22%;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.cate .cate6 .ca img{
+    width: 150px;
+    
+}
+.cate .cate6 .name{
+    color: black;
+    padding: 34px 22%;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.cate .cate7 .ca img{
+    width: 150px;
+    
+}
+.cate .cate7 .name{
+    color: black;
+    padding: 34px 22%;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.ca{
+    width: 150px;
+    cursor: pointer;
+}
+.ca:hover{
+    border-radius: 80px;
+    box-shadow: 0 10px 20px rgba(169, 18, 18, 0.3);;
+}
+
+.view a{
+    padding: 20px;
+    white-space: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    overflow: visible;
+    margin-right: 42px;
+}
+.viewall{
+    padding: 3px 0.5%;
+     width: 26px;
+     height: 22px;
+    color: #424242;
+}
+
+
+
+
+.cate{
+    max-height: 800px;
+    width: 1400px;
+    border: 0px;
+    cursor: pointer;
+    display: flex;
+    overflow-x: auto;
+}
+
+.cate::-webkit-scrollbar{
+    width: 0px;
+}
+.cate .best1 .name{
+
+    color: black;
+    margin-left: 50px;
+    padding: 10px 26%;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.cate .best2 .name{
+
+    color: black;
+    margin-left: 50px;
+    padding: 10px 26%;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.cate .best3 .name{
+
+    color: black;
+    margin-left: 50px;
+    padding: 10px 32%;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.cate .best4 .name{
+
+    color: black;
+    margin-left: 50px;
+    padding: 10px 45%;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.new{
+    padding: 10px 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+   
+}
+.new .card{
+    width: 230px;
+    height: 380px;
+    background: #FAF5F5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+   /* padding: 60px;*/
+    margin-top: -20px;
+    margin-left: -20px;
+    /*overflow: hidden;*/
+    
+}
+.new .card img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    
+}
+.new .card .title{
+    padding: 4px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.new .card .title .like{
+    background-color: none;
+    border: none;
+    font-size: 18px;
+    opacity: 0.6;
+    color: #504F4F;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+}
+.new .card .title .like:hover{
+    color: black;
+
+}
+.new .card .title .like.liked{
+    color: red;
+}
+.new .card .desc{
+    padding: 1px 15px;
+    opacity: 0.8;
+}
+.new .card .price
+{
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 650;
+    color: red;
+}
+.new .card .box{
+    display: flex;
+    gap: -50px;
+}
+.new .card .box .off{
+    margin-left: -10px;
+    font-size: 16px;
+    color: #2C8E48;
+    font-weight: 500;
+}
+.new .card .offprice{
+    
+    padding: 5px 15px;
+    color: #B2B2B2;
+    font-size:14px ;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+.new .card .addtocart {
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: 12PX;
+    color: black;
+    background-color: #FFC700;
+    padding: 8px 65px;
+    font-weight: 700;
+    border:1px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;;
+    
+
+}
+.new .card .addtocart:hover{
+    background-color: #F3BD00;
+}
+
+/*2*/
+
+.new .card1{
+    width: 230px;
+    height: 380px;
+    background: #FAF5F5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+   /* padding: 60px;*/
+    margin-top: -20px;
+    margin-left: -20px;
+    /*overflow: hidden;*/
+    
+}
+.new .card1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    
+}
+.new .card1 .title{
+    padding: 4px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.new .card1 .title .like{
+    background-color: none;
+    border: none;
+    font-size: 18px;
+    opacity: 0.6;
+    color: #504F4F;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+}
+.new .card1 .title .like:hover{
+    color: black;
+
+}
+.new .card1 .title .like.liked{
+    color: red;
+}
+.new .card1 .desc{
+    padding: 1px 15px;
+    opacity: 0.8;
+}
+.new .card1 .price
+{
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 650;
+    color: red;
+}
+.new .card1 .box{
+    display: flex;
+    gap: -50px;
+}
+.new .card1 .box .off{
+    margin-left: -10px;
+    font-size: 16px;
+    color: #2C8E48;
+    font-weight: 500;
+}
+.new .card1 .offprice{
+    
+    padding: 5px 15px;
+    color: #B2B2B2;
+    font-size:14px ;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+.new .card1 .addtocart {
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: 12PX;
+    color: black;
+    background-color: #FFC700;
+    padding: 8px 65px;
+    font-weight: 700;
+    border:1px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;;
+    
+
+}
+.new .card1 .addtocart:hover{
+    background-color: #F3BD00;
+}
+
+/*3*/
+
+.new .card2{
+    width: 230px;
+    height: 380px;
+    background: #FAF5F5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+   /* padding: 60px;*/
+    margin-top: -20px;
+    margin-left: -20px;
+    /*overflow: hidden;*/
+    
+}
+.new .card2 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    
+}
+.new .card2 .title{
+    padding: 4px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.new .card2 .title .like{
+    background-color: none;
+    border: none;
+    font-size: 18px;
+    opacity: 0.6;
+    color: #504F4F;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+}
+.new .card2 .title .like:hover{
+    color: black;
+
+}
+.new .card2 .title .like.liked{
+    color: red;
+}
+.new .card2 .desc{
+    padding: 1px 15px;
+    opacity: 0.8;
+}
+.new .card2 .price
+{
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 650;
+    color: red;
+}
+.new .card2 .box{
+    display: flex;
+    gap: -50px;
+}
+.new .card2 .box .off{
+    margin-left: -10px;
+    font-size: 16px;
+    color: #2C8E48;
+    font-weight: 500;
+}
+.new .card2 .offprice{
+    
+    padding: 5px 15px;
+    color: #B2B2B2;
+    font-size:14px ;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+.new .card2 .addtocart {
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: 12PX;
+    color: black;
+    background-color: #FFC700;
+    padding: 8px 65px;
+    font-weight: 700;
+    border:1px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;;
+    
+
+}
+.new .card2 .addtocart:hover{
+    background-color: #F3BD00;
+}
+
+
+/*4*/
+
+.new .card3{
+    width: 230px;
+    height: 380px;
+    background: #FAF5F5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+   /* padding: 60px;*/
+    margin-top: -20px;
+    margin-left: -20px;
+    /*overflow: hidden;*/
+    
+}
+.new .card3 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    
+}
+.new .card3 .title{
+    padding: 4px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.new .card3 .title .like{
+    background-color: none;
+    border: none;
+    font-size: 18px;
+    opacity: 0.6;
+    color: #504F4F;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+}
+.new .card3 .title .like:hover{
+    color: black;
+
+}
+.new .card3 .title .like.liked{
+    color: red;
+}
+.new .card3 .desc{
+    padding: 1px 15px;
+    opacity: 0.8;
+}
+.new .card3 .price
+{
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 650;
+    color: red;
+}
+.new .card3 .box{
+    display: flex;
+    gap: -50px;
+}
+.new .card3 .box .off{
+    margin-left: -10px;
+    font-size: 16px;
+    color: #2C8E48;
+    font-weight: 500;
+}
+.new .card3 .offprice{
+    
+    padding: 5px 15px;
+    color: #B2B2B2;
+    font-size:14px ;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+.new .card3 .addtocart {
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: 12PX;
+    color: black;
+    background-color: #FFC700;
+    padding: 8px 65px;
+    font-weight: 700;
+    border:1px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;;
+    
+
+}
+.new .card3 .addtocart:hover{
+    background-color: #F3BD00;
+}
+
+
+/*5*/
+
+.new .card4{
+    width: 230px;
+    height: 380px;
+    background: #FAF5F5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 15px;
+   /* padding: 60px;*/
+    margin-top: -20px;
+    margin-left: -20px;
+    /*overflow: hidden;*/
+    
+}
+.new .card4 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    
+}
+.new .card4 .title{
+    padding: 4px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.new .card4 .title .like{
+    background-color: none;
+    border: none;
+    font-size: 18px;
+    opacity: 0.6;
+    color: #504F4F;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+}
+.new .card4 .title .like:hover{
+    color: black;
+
+}
+.new .card4 .title .like.liked{
+    color: red;
+}
+.new .card4 .desc{
+    padding: 1px 15px;
+    opacity: 0.8;
+}
+.new .card4 .price
+{
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 650;
+    color: red;
+}
+.new .card4 .box{
+    display: flex;
+    gap: -50px;
+}
+.new .card4 .box .off{
+    margin-left: -10px;
+    font-size: 16px;
+    color: #2C8E48;
+    font-weight: 500;
+}
+.new .card4 .offprice{
+    
+    padding: 5px 15px;
+    color: #B2B2B2;
+    font-size:14px ;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+.new .card4 .addtocart {
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: 12PX;
+    color: black;
+    background-color: #FFC700;
+    padding: 8px 65px;
+    font-weight: 700;
+    border:1px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;;
+    
+
+}
+.new .card4 .addtocart:hover{
+    background-color: #F3BD00;
+}
+
+
+.footer{
+    background-color: #EDF5FF;
+    padding: 50px 0;
+    overflow: hidden;
+}
+/*.logob{
+    width: 300px;
+    height:auto;
+
+}
+/*.p{
+    padding: 0px 2%;
+    font-size: 24px;
+    font-weight: 700;
+}*/
+.container{
+    background-color: none;
+
+}
+ul{
+    list-style: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+.col{
+    margin-left: 90px;
+    line-height: 30px;
+    width: 15%;   
+    padding: 0 12px;
+}   
+.col1{
+    line-height: 15px;
+    width: 22%;
+    padding: 0 30px;
+}   
+.col1 .Subscribe{
+    padding: 0 20px;
+}
+.col1 .textfield{
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+}
+.col1 .textfield input[type="text"]{
+    width: 90%;
+    padding: 10px 10px;
+    height: 50%;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    font-style: italic;
+    border: 1px solid;
+    border-color: #616161;
+    border-radius: 15px;
+    opacity: 0.9;
+    transition: border-color 0.3s ease;
+}
+.col1 .textfield input[type="text"]:focus{
+    border-color: #4A90E2;
+}
+.col1 a .emailbtn{
+    width: 45px;
+}
+
+.col ul li a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    font-weight: 350;
+    color: black;
+    display: block;
+}
+.footer .end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .end h3{
+    padding: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #9C9C9C;
+
+}
+.footer .social{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.footer .social .connect{
+    width: 80%;
+}
